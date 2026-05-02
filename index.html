@@ -1,21 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-    <title>Battle Felix - Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Felix VR - Official Site</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 50px; max-width: 800px; margin: auto; }
-        h1 { color: #333; }
+        :root {
+            --primary: #007bff;
+            --accent: #00d4ff;
+            --bg: #0b0e14;
+            --text: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 100px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+        }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; }
+        .tagline { font-size: 1.2rem; color: var(--accent); margin-bottom: 30px; }
+        
+        .container { max-width: 900px; margin: auto; padding: 40px 20px; }
+        
+        .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px; }
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: inline-block;
+        }
+        .btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,212,255,0.3); }
+        
+        .btn-download { background-color: var(--primary); color: white; }
+        .btn-donate { background-color: #ffc439; color: #111; }
+
+        .section { margin-bottom: 60px; padding: 30px; background: rgba(255,255,255,0.05); border-radius: 15px; }
+        
+        #privacy { font-size: 0.9rem; text-align: left; opacity: 0.8; }
+        footer { padding: 40px; font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.1); }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy - Battle Felix</h1>
-    <p>Ultimo aggiornamento: 2026</p>
-    <p>Questo gioco utilizza Epic Online Services per il multiplayer. Non raccogliamo dati personali sui nostri server privati.</p>
-    <h2>1. Dati Raccolti</h2>
-    <p>Il gioco accede al tuo ID account Epic per permettere il matchmaking e la lista amici.</p>
-    <h2>2. Utilizzo dei Dati</h2>
-    <p>I dati vengono utilizzati esclusivamente per le funzionalità di gioco e non vengono venduti a terzi.</p>
-    <h2>3. Contatti</h2>
-    <p>Per domande, scrivi a: studiofelix.vr@outlook.it</p>
+
+    <header>
+        <h1>Battle Felix</h1>
+        <p class="tagline">L'Esperienza VR Multiplayer Definitiva</p>
+        
+        <div class="btn-group">
+            <a href="https://www.dropbox.com/scl/fi/csi55g3m8tc7vniq5vd19/Battle_Felix-Android-Shipping-arm64.apk?rlkey=8qjbfr87gl605pzoiqt8ock2l&st=vx7ohf4v&dl=1" class="btn btn-download">⬇ Scarica APK (Android VR)</a>
+            <a href="https://www.paypal.com/donate/?hosted_button_id=99MQYND8B3AEJ" class="btn btn-donate">☕ Supporta lo Sviluppatore</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Benvenuto nell'Arena</h2>
+            <p>Battle Felix è un progetto VR indipendente focalizzato sul combattimento multiplayer e l'immersione totale. Preparati a sfidare i tuoi amici in un mondo virtuale senza confini.</p>
+        </div>
+
+        <div id="privacy" class="section">
+            <h2>Privacy Policy</h2>
+            <p><strong>Ultimo aggiornamento:</strong> 2 Maggio 2026</p>
+            <p>Studio Felix VR si impegna a proteggere la tua privacy. Questa policy spiega come gestiamo le informazioni relative all'uso di Battle Felix tramite Epic Online Services (EOS).</p>
+            <ul>
+                <li><strong>Accesso Account:</strong> Utilizziamo EOS per il login. Accediamo esclusivamente al tuo ID account Epic e al tuo nome visualizzato per gestire il matchmaking e la lista amici.</li>
+                <li><strong>Nessuna Raccolta Dati Terzi:</strong> Non raccogliamo, memorizziamo o vendiamo dati personali a server esterni.</li>
+                <li><strong>Contatti:</strong> Per qualsiasi richiesta sulla privacy, contattaci a: <strong>studiofelix.vr@outlook.it</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Studio Felix VR. Sviluppato con passione per la Realtà Virtuale.
+    </footer>
+
 </body>
 </html>
